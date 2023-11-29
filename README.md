@@ -6,3 +6,6 @@ This repo is meant to serve as a guide to starting Javascript. So far, I'm using
 
 ## Curriculum
 - variables.js
+- operators.js
+- conditionals.js
+- functions.js
