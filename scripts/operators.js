@@ -2,6 +2,7 @@ var number = 6;
 var anotherNumber = 4;
 var firstPart = "Josie";
 var secondPart = " is very cool, I promise";
+var nothingIsHere;
 
 //I declared some variables above. Lets use them to learn about basic operators!
 //We can add two variables by using the + operator.
@@ -30,12 +31,12 @@ console.log(number + anotherNumber); //logs 16
 anotherNumber = "I'm a string now.";
 console.log(anotherNumber);
 
-//While this is possible, it's best practice to keep types consistent. Let's change this back to a number.
+//While this is possible, it's best practice to keep types consistent. Mixing data types can end up with odd results.
+//Let's change this back to a number.
 anotherNumber = 4;
 
 //We can check whether variables are equal by using the === operator.
 console.log(number === 6); //logs true
-console.log(number === anotherNumber); //logs false
 console.log(number === firstPart); //logs false
 
 // The === operator checks both value and type. Both have to match to be true.
@@ -46,4 +47,14 @@ console.log(1 === "1"); //logs false
 console.log(1 == "1"); //logs true
 //This operator is not used as often, since types are usually kept consistent.
 
-//! and !==
+//We can also check if values are NOT equal! 
+console.log(number !== anotherNumber) //logs true
+
+//And we can check whether a value exists at all!
+console.log(!nothingIsHere) //logs true
+
+//These are the basics, the foundation we can use to to learn more complicated and broad concepts.
+//If you don't fully understand, that's okay! Make sure you grasp it a bit, and then let's move on.
+//Some of these concepts will only click when you use them elsewhere. And we can always come back if it doesn't click!
+
+//Next up, conditionals!
