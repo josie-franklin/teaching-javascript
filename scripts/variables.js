@@ -5,11 +5,12 @@ console.log("Hello, world!");
 //Let's go over some variable data types.
 //What's a variable?
 var numberVar = 1;
+var anything = 2;
 
 //A variable is a declared piece of data. Above, we defined a variable named numberVar with the assigned value of 1.
 //Here's a breakdown:
 //- The "var" keyword tells the script that we are now going to define a variable.
-//- The name "numberVar" is the name we will use to call this variable later in our code. 
+//- The name "numberVar" is the name we will use to call this variable later in our code.
 //  We can put anything we want as the name, just be sure to remember it!
 //- The "=", or equal sign, tells the script we want to sent the variable's value. Here, we set the value to be 1.
 
@@ -18,9 +19,9 @@ console.log(numberVar);
 //When we run our script, we should see the value, 1, logged in our console.
 
 //On line 5, I mentioned data types. What exactly does that mean?
-//Our variable numberVar is the number type! Seems strightforward enough. 
+//Our variable numberVar is the number type! Seems strightforward enough.
 
-//This variable's value is a string data type. A string is a text sequence that appears in quotes or double quotes. 
+//This variable's value is a string data type. A string is a text sequence that appears in quotes or double quotes.
 //The first thing we did in this file was console.log() a string!
 var stringVar = "Any text can go here!";
 
@@ -30,17 +31,22 @@ var booleanVar = true;
 //This variable is an array data type. It is a list of multiple values that don't have to be the same type!
 //The list of values is surrounded by straight brackets, and the values are separated by commas.
 var arrayVar = [8, "Josie", 42, false, "bumblebee"];
-
+var arrayTest = [4, 17, "these things", "numbers", numberVar];
 //The last data type is an object. This object type is very broad. Everything in Javascript is an object!
 //Think of objects as rectangles, and the other types as squares. All squares are rectangles, just as all numbers, strings, etc are objects.
 //If that confuses you, don't worry. We'll come back to this concept over and over as we learn.
 //For now, here's a great example of a simple object. It contains a lot of information, surrounded by curly brackets.
 //Each line in the curly brackets has a key and value pair. For example, the key "name" has a set value of "Brandon".
 var objectVar = {
-    name: "Brandon",
-    hair: "black",
-    eyes: 2,
-}
-
+  name: "Brandon",
+  hair: "black",
+  eyes: 2,
+  dinosaur: function () {
+    console.log("roar");
+  },
+};
+console.log(objectVar);
+console.log(objectVar.name);
 //The object type and the array type seem similar, and they are! But there are some differences we'll go over a little later.
 //For now, let's move on to operators!
+objectVar.dinosaur()
