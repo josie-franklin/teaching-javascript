@@ -56,3 +56,10 @@ timeToArgue(42, 58)
 //The second value you feed it will be named argTwo.
 
 //Lets experiment with this a little. Define a function that takes 3 arguments, but give them names that are out of order!
+
+function argueAgain(fight2,fight3,fight1) {
+console.log(fight1)
+console.log(fight3)
+console.log(fight2)
+}
+argueAgain("scissors","paper","rock")
